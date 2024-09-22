@@ -3,7 +3,7 @@ rule Detected_WannaCry {
       author = "Oguzhan YALCIN"
       description = "Detects WannaCry Ransomware"
       hash = "ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa" //sha256
-
+      tags = "ransomware, wannacry"
    strings:
       $s1 = "TaskStart" nocase wide ascii
       $s2 = "GetNativeSystemInfo" nocase wide ascii
